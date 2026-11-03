@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chris Magill | Quality Assurance Engineer</title>
-<meta name="description" content="Quality Assurance Engineer in Nashville, TN. Test frameworks for UI, API, performance, accessibility, contract and AI-assistant testing.">
+<meta name="description" content="Quality Assurance Engineer in Nashville, TN. Test frameworks for UI, API, performance, accessibility, contract, security and AI-assistant testing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -138,13 +138,14 @@ footer { padding: 28px 0 44px; color: var(--muted); font-size: 0.9rem; border-to
         </div>
       </div>
       <div>
-        <div class="run" role="img" aria-label="Test results from three of my projects: 182 passed and 2 expected failures, 48 passed, and 74 contract tests.">
+        <div class="run" role="img" aria-label="Test results from my projects: 182 passed and 2 expected failures, 48 passed, 98 passed, 74 contract tests and 34 visual tests.">
           <div class="cmd">$ python -m pytest</div>
           <div class="line"><span>ai-assistant-evaluation-tests</span><span class="ok">182 passed, 2 xfailed</span></div>
           <div class="line"><span>wage-compliance-property-tests</span><span class="ok">48 passed</span></div>
+          <div class="line"><span>api-security-owasp-tests</span><span class="ok">98 passed</span></div>
           <div class="line"><span>pokeapi-contract-tests</span><span>74 tests</span></div>
           <div class="line"><span>visual-regression-selenium-tests</span><span>34 tests</span></div>
-          <div class="bar">16 projects: UI, API, performance, accessibility, contract and AI-assistant testing.</div>
+          <div class="bar">19 projects: UI, API, performance, accessibility, contract, security and AI-assistant testing, in Python, TypeScript and Java.</div>
         </div>
         <p class="run-note">Test counts from my own repositories.</p>
       </div>
@@ -174,9 +175,9 @@ footer { padding: 28px 0 44px; color: var(--muted); font-size: 0.9rem; border-to
       <h2>Tech stack</h2>
       <p class="section-intro">What I use day to day, and what these projects are built with.</p>
       <dl class="stack">
-        <dt>Languages</dt><dd>Python, JavaScript, TypeScript, SQL</dd>
-        <dt>Frameworks</dt><dd>Selenium, Playwright, Cypress, pytest, Behave, Hypothesis</dd>
-        <dt>Tools</dt><dd>Postman, JMeter, Docker, GitHub Actions, Jira, TestRail, LambdaTest, TestRigor, Datadog, LaunchDarkly, axe-core, Claude Code</dd>
+        <dt>Languages</dt><dd>Python, Java, JavaScript, TypeScript, SQL</dd>
+        <dt>Frameworks</dt><dd>Selenium, Playwright, Cypress, pytest, JUnit 5, Behave, Hypothesis</dd>
+        <dt>Tools</dt><dd>Postman, JMeter, Docker, Maven, GitHub Actions, Jira, TestRail, LambdaTest, TestRigor, Datadog, LaunchDarkly, axe-core, Claude Code</dd>
       </dl>
     </div>
   </section>
@@ -272,6 +273,21 @@ footer { padding: 28px 0 44px; color: var(--muted); font-size: 0.9rem; border-to
         <h3><a href="https://github.com/magill131/ai-eval-pytest-framework">ai-eval-pytest-framework</a></h3>
         <p>pytest framework that grades an AI model&#x27;s answers with code checks (accuracy, format, tool use, hallucination, safety) and a CI quality gate; offline mock model, optional Anthropic API</p>
         <div class="meta"><span class="count">88 tests</span><ul class="tags"><li>ai-testing</li><li>llm-evaluation</li><li>pytest</li><li>quality-gate</li></ul></div>
+      </li>
+      <li class="row">
+        <h3><a href="https://github.com/magill131/flaky-test-detector">flaky-test-detector</a></h3>
+        <p>Flaky test detector for pytest: reruns a suite in normal and shuffled order, finds flaky and order-dependent tests, and fails a CI quality gate on any test not in quarantine (Python, pytest, GitHub Actions)</p>
+        <div class="meta"><span class="count">97 tests</span><ul class="tags"><li>python</li><li>pytest</li><li>flaky-tests</li><li>quality-gate</li></ul></div>
+      </li>
+      <li class="row">
+        <h3><a href="https://github.com/magill131/api-security-owasp-tests">api-security-owasp-tests</a></h3>
+        <p>Security tests for a demo shop API in pytest and Flask, mapped to the OWASP API Top 10: ten weaknesses can be planted one at a time, and the suite must catch each one, only through its own tests (Python, pytest, Flask, GitHub Actions)</p>
+        <div class="meta"><span class="count">98 passed</span><ul class="tags"><li>api-security</li><li>owasp</li><li>pytest</li><li>flask</li></ul></div>
+      </li>
+      <li class="row">
+        <h3><a href="https://github.com/magill131/java-selenium-junit-tests">java-selenium-junit-tests</a></h3>
+        <p>Java UI tests with Selenium and JUnit 5 for a practice shop, using a Page Object Model: eight weaknesses can be planted one at a time, and the suite must catch each one (Java, Maven, GitHub Actions)</p>
+        <div class="meta"><span class="count">35 passed</span><ul class="tags"><li>java</li><li>selenium</li><li>junit-5</li><li>maven</li></ul></div>
       </li>
       </ul>
     </div>
